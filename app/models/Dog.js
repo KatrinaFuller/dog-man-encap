@@ -1,6 +1,9 @@
 
 export default class Dog {
-  constructor() {
+  constructor(name) {
     console.log("Hello from Dog")
+    this.name = name
+    this.petCount = 0
+
   }
 }
