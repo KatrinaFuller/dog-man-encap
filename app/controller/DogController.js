@@ -9,7 +9,7 @@ function _draw() {
   let petCountElement = document.querySelector("#pet-count")
   let dog = _dogService.Dog
   nameElement.textContent = dog.name
-  petCountElement.textContent = dog.petCount.toString();
+  petCountElement.textContent = "Pet Count: " + dog.petCount.toString();
 }
 
 // PUBLIC

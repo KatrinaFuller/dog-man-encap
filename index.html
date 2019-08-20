@@ -5,20 +5,28 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css"
+    integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.css">
+  <link rel="stylesheet" href="style.css">
   <title>Dog Man Encap</title>
 </head>
 
 <body>
   <div class="container-fluid">
-    <div class="row">
+    <div class="row text-center">
       <div class="col">
         <h1 id="dog-name">Mojo</h1>
         <img
           src="https://epi.azureedge.net/website-images/images/default-album/pomeranian461cb6a24c9f653bbdf5ff0000035de2.jpg?sfvrsn=8d83d37b_2"
           alt="">
         <h3 id="pet-count">Pet Count</h3>
-        <button onclick="app.controllers.dogController.pet()">Pet Dog</button>
-        <button onclick="app.controllers.dogController.dogBone()">Dog Bone</button>
+        <button type="button" class="btn buttons" onclick="app.controllers.dogController.pet()"><i
+            class="fas fa-paw"></i> Pet
+          Dog</button>
+        <button type="button" class="btn buttons" onclick="app.controllers.dogController.dogBone()"> <i
+            class="fas fa-bone"></i> Dog
+          Bone</button>
       </div>
     </div>
   </div>
