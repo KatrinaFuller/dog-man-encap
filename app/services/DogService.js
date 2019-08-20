@@ -14,6 +14,10 @@ export default class DogService {
     _dog.petCount++
   }
 
+  dogBone() {
+    _dog.petCount = 0
+  }
+
   get Dog() {
     return _dog
   }

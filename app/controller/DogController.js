@@ -21,11 +21,13 @@ export default class DogController {
 
   // let server know the user wants to pet the dog
   pet() {
-    debugger
     _dogService.pet()
-    debugger
     _draw();
   }
 
   // let the server know the user want to give a dog bone
+  dogBone() {
+    _dogService.dogBone();
+    _draw();
+  }
 }
